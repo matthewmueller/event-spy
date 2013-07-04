@@ -9,11 +9,6 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": [
-    "index.js",
-    "template.js",
-    "lib/spy.js"
-  ],
-  "styles": [
-    "event-spy.css"
+    "index.js"
   ]
 }
