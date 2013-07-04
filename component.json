@@ -1,0 +1,19 @@
+{
+  "name": "event-spy",
+  "repo": "matthewmueller/event-spy",
+  "description": "spy on events",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js",
+    "lib/spy.js"
+  ],
+  "styles": [
+    "event-spy.css"
+  ]
+}
