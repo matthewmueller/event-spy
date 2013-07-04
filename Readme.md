@@ -24,13 +24,13 @@ spy('click', function(e, fn) {
 
 Spy on events. `type` can either be a string or a regex. If no `type` given, spy watches all events.
 
-Mouse over and Mouse down events
+#### `mouseover` and `mousedown` events:
 
 ```js
 spy(/(mouseover|mousedown)/, fn);
 ```
 
-All events:
+#### All events:
 
 ```js
 spy(fn);
