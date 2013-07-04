@@ -27,7 +27,7 @@ Spy on events. `type` can either be a string or a regex. If no `type` given, spy
 Mouse over and Mouse down events
 
 ```js
-spy(`(mouseover|mousedown)`, fn);
+spy(/(mouseover|mousedown)/, fn);
 ```
 
 All events:
