@@ -2,7 +2,7 @@
  * Module dependencies
  */
 
-var winlistener = Window.prototype.addEventListener;
+var winlistener = window.addEventListener;
 var nodelistener = Node.prototype.addEventListener;
 
 /**
@@ -26,7 +26,7 @@ function Spy(type, fn) {
 
   type = ('string' == typeof type) ? new RegExp(type) : type;
 
-  Window.prototype.addEventListener = function(t, eventfn) {
+  window.addEventListener = function(t, eventfn) {
     winlistener.call(this, t, function(e) {
       if (!type.test(t)) return eventfn.apply(this, arguments);
       fn.call(this, e, eventfn);
@@ -42,7 +42,7 @@ function Spy(type, fn) {
 
   return {
     destroy: function() {
-      Window.prototype.addEventListener = winlistener;
+      window.addEventListener = winlistener;
       Node.prototype.addEventListener = nodelistener;
     }
   };
